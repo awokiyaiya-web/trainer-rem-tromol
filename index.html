@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trainer Rem Tromol | Media Pembelajaran PLP</title>
+    
+    <!-- Import Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Import FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        utama: '#0f172a',
+                        aksen: '#dc2626',
+                        terang: '#f8fafc',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .bg-grid {
+            background-size: 40px 40px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+        }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f5f9; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+    </style>
+</head>
+<body class="bg-terang text-gray-800 font-sans antialiased flex flex-col min-h-screen selection:bg-aksen selection:text-white">
+
+    <!-- Navbar Minimalis -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-200 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
+            <h1 class="text-2xl font-black text-utama tracking-tight flex items-center gap-2">
+                <i class="fas fa-cogs text-aksen"></i> TRAINER <span class="text-aksen">REM TROMOL</span>
+            </h1>
+            <ul class="flex space-x-8 text-sm font-semibold text-gray-600 mt-4 md:mt-0">
+                <li><a href="#hero" class="hover:text-aksen transition-colors">Beranda</a></li>
+                <li><a href="#animasi" class="hover:text-aksen transition-colors">Animasi</a></li>
+                <li><a href="#materi" class="hover:text-aksen transition-colors">Materi</a></li>
+                <li><a href="#trainer" class="hover:text-aksen transition-colors">Alat Trainer</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 1. HERO SECTION -->
+    <section id="hero" class="relative pt-32 pb-20 lg:pt-40 lg:pb-32 bg-white bg-grid border-b border-gray-200 overflow-hidden">
+        <div class="max-w-5xl mx-auto px-4 text-center relative z-10">
+            <div class="inline-flex items-center gap-2 py-1 px-4 rounded-full bg-blue-50 text-blue-700 border border-blue-200 font-bold text-xs mb-8 uppercase tracking-widest">
+                <i class="fas fa-graduation-cap"></i> Media Pembelajaran Interaktif
+            </div>
+            
+            <h2 class="text-5xl md:text-7xl font-black text-utama mb-6 tracking-tight">
+                Trainer <br>
+                <span class="text-aksen relative inline-block mt-2">
+                    Rem Tromol
+                    <svg class="absolute w-full h-3 -bottom-1 left-0 text-red-200 z-[-1]" viewBox="0 0 100 10" preserveAspectRatio="none"><path d="M0 5 Q 50 15 100 5" stroke="currentColor" stroke-width="8" fill="transparent"/></svg>
+                </span>
+            </h2>
+            
+            <p class="text-lg text-gray-500 mb-10 max-w-2xl mx-auto font-normal leading-relaxed">
+                Pelajari mekanisme, komponen, dan cara kerja sistem pengereman mekanis melalui alat peraga fisik (trainer) adaptasi Honda GL-Pro.
+            </p>
+            
+            <div class="flex justify-center gap-4">
+                <a href="#animasi" class="bg-utama hover:bg-gray-800 text-white font-semibold py-3 px-8 rounded-lg shadow-lg hover:shadow-xl transition-all flex items-center gap-2">
+                    <i class="fas fa-play"></i> Lihat Animasi
+                </a>
+                <a href="#evaluasi" class="bg-white border-2 border-gray-300 hover:border-aksen hover:text-aksen text-gray-700 font-semibold py-3 px-8 rounded-lg transition-all flex items-center gap-2">
+                    <i class="fas fa-pen-clip"></i> Evaluasi Kuis
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. BAGIAN ANIMASI -->
+    <section id="animasi" class="py-20 bg-terang scroll-mt-20">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="flex flex-col items-center mb-10">
+                <span class="text-aksen font-bold tracking-widest uppercase text-sm mb-2">Tahap 1</span>
+                <h3 class="text-3xl font-black text-utama">Visualisasi Cara Kerja</h3>
+                <div class="w-16 h-1 bg-aksen mt-4 rounded"></div>
+            </div>
+            
+            <div class="bg-white p-3 rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-gray-100">
+                <div class="aspect-video w-full rounded-xl overflow-hidden bg-gray-900 flex items-center justify-center">
+                    <video width="100%" height="100%" controls controlsList="nodownload" class="w-full h-full object-contain">
+                        <source src="assets/video/animasi-rem.mp4" type="video/mp4">
+                        Maaf, browser Anda tidak mendukung pemutar video.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. BAGIAN MATERI -->
+    <section id="materi" class="py-20 bg-white border-y border-gray-200 scroll-mt-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col items-center mb-12">
+                <span class="text-aksen font-bold tracking-widest uppercase text-sm mb-2">Tahap 2</span>
+                <h3 class="text-3xl font-black text-utama">Teori Dasar & Alur Mekanis</h3>
+                <div class="w-16 h-1 bg-aksen mt-4 rounded"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div class="bg-terang p-8 rounded-2xl border border-gray-200">
+                    <h4 class="text-xl font-bold text-utama mb-4 flex items-center gap-2">
+                        <i class="fas fa-book-open text-aksen"></i> Prinsip Dasar
+                    </h4>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Sistem rem tromol menggunakan metode gesekan antara kampas rem (sepatu rem) dengan bagian dalam tromol yang berputar. Karena berbasis mekanis murni, sistem ini mengandalkan gaya tarik dari kawat atau batang baja (Brake Rod) tanpa menggunakan fluida hidrolik.
+                    </p>
+                    <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-r">
+                        <p class="text-sm text-yellow-800">
+                            <strong>Catatan:</strong> Panas yang dihasilkan dari gesekan ini harus dibuang dengan baik agar rem tidak mengalami <em>fading</em> (blong akibat panas).
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-terang p-8 rounded-2xl border border-gray-200">
+                    <h4 class="text-xl font-bold text-utama mb-6 flex items-center gap-2">
+                        <i class="fas fa-list-ol text-aksen"></i> Alur Pengereman
+                    </h4>
+                    <ul class="space-y-5">
+                        <li class="flex items-start gap-4">
+                            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-utama text-white flex items-center justify-center font-bold text-sm">1</div>
+                            <p class="text-gray-600 text-sm pt-1">Pedal rem diinjak, menarik <strong class="text-utama">Batang Penarik (Brake Rod)</strong> ke depan.</p>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-utama text-white flex items-center justify-center font-bold text-sm">2</div>
+                            <p class="text-gray-600 text-sm pt-1"><strong class="text-utama">Paha Rem (Brake Lever)</strong> ikut tertarik dan memutar poros Nok (Brake Cam).</p>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-utama text-white flex items-center justify-center font-bold text-sm">3</div>
+                            <p class="text-gray-600 text-sm pt-1">Putaran Nok memaksa kedua <strong class="text-utama">Sepatu Rem (Brake Shoes)</strong> mekar ke luar.</p>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-utama text-white flex items-center justify-center font-bold text-sm">4</div>
+                            <p class="text-gray-600 text-sm pt-1">Gesekan kampas dengan dinding <strong class="text-utama">Tromol</strong> menahan laju roda.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. BAGIAN DOKUMENTASI TRAINER -->
+    <section id="trainer" class="py-20 bg-terang scroll-mt-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col items-center mb-12">
+                <span class="text-aksen font-bold tracking-widest uppercase text-sm mb-2">Tahap 3</span>
+                <h3 class="text-3xl font-black text-utama">Dokumentasi Komponen</h3>
+                <div class="w-16 h-1 bg-aksen mt-4 rounded"></div>
+                <p class="text-gray-500 mt-4 text-sm"><i class="fas fa-hand-pointer"></i> Klik gambar untuk memperbesar</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card Foto 1 -->
+                <div class="bg-white rounded-xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300 group">
+                    <div class="h-48 bg-gray-100 flex items-center justify-center relative overflow-hidden p-2 cursor-pointer" onclick="openModal(this.querySelector('img'))">
+                        <img src="assets/img/sepatu-rem-nok.jpg" alt="Sepatu Rem (Brake Shoe)" class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-5 text-center border-t border-gray-100">
+                        <h4 class="font-bold text-utama">Sepatu Rem</h4>
+                        <p class="text-xs text-gray-500 mt-1 uppercase tracking-wider">Brake Shoe </p>
+                    </div>
+                </div>
+
+                <!-- Card Foto 2 -->
+                <div class="bg-white rounded-xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300 group">
+                    <div class="h-48 bg-gray-100 flex items-center justify-center relative overflow-hidden p-2 cursor-pointer" onclick="openModal(this.querySelector('img'))">
+                        <img src="assets/img/pedal-rem.jpg" alt="Pedal dan Brake Rod" class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-5 text-center border-t border-gray-100">
+                        <h4 class="font-bold text-utama">Pedal & Tarikan</h4>
+                        <p class="text-xs text-gray-500 mt-1 uppercase tracking-wider">Pedal & Brake Rod</p>
+                    </div>
+                </div>
+
+                <!-- Card Foto 3 -->
+                <div class="bg-white rounded-xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300 group">
+                    <div class="h-48 bg-gray-100 flex items-center justify-center relative overflow-hidden p-2 cursor-pointer" onclick="openModal(this.querySelector('img'))">
+                        <img src="assets/img/tromol-roda.jpg" alt="Tromol Roda Belakang" class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-5 text-center border-t border-gray-100">
+                        <h4 class="font-bold text-utama">Tromol Roda</h4>
+                        <p class="text-xs text-gray-500 mt-1 uppercase tracking-wider">Brake Drum</p>
+                    </div>
+                </div>
+
+                <!-- Card Foto 4 -->
+                <div class="bg-white rounded-xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300 group">
+                    <div class="h-48 bg-gray-100 flex items-center justify-center relative overflow-hidden p-2 cursor-pointer" onclick="openModal(this.querySelector('img'))">
+                        <img src="assets/img/full-trainer.jpg" alt="Tampilan Full Alat Peraga (Trainer)" class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-5 text-center border-t border-gray-100">
+                        <h4 class="font-bold text-utama">Full Alat Peraga</h4>
+                        <p class="text-xs text-gray-500 mt-1 uppercase tracking-wider">Trainer </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. BAGIAN EVALUASI -->
+    <section id="evaluasi" class="py-20 bg-utama relative overflow-hidden scroll-mt-20">
+        <div class="absolute -top-24 -right-24 w-64 h-64 bg-white opacity-5 rounded-full blur-2xl"></div>
+        <div class="absolute -bottom-24 -left-24 w-64 h-64 bg-aksen opacity-20 rounded-full blur-2xl"></div>
+
+        <div class="max-w-3xl mx-auto px-4 relative z-10 flex flex-col items-center">
+            <h3 class="text-4xl font-black text-white mb-4 text-center">Uji Pemahaman Siswa</h3>
+            <p class="mb-8 text-gray-300 text-lg font-light text-center max-w-2xl">
+                Jawab pertanyaan di bawah ini untuk menguji pemahaman Anda tentang materi rem tromol.
+            </p>
+            
+            <div id="quiz-container" class="w-full bg-white rounded-2xl p-8 shadow-[0_10px_30px_rgba(220,38,38,0.2)]">
+                <div id="quiz-active">
+                    <div class="flex justify-between items-center mb-6">
+                        <span id="question-progress" class="text-sm font-bold text-aksen uppercase tracking-wider">Soal 1 / 20</span>
+                        <span id="score-display" class="text-sm font-bold text-gray-500">Skor: 0</span>
+                    </div>
+                    
+                    <h4 id="question-text" class="text-xl font-bold text-utama mb-6 leading-relaxed">
+                        Pertanyaan akan muncul di sini...
+                    </h4>
+                    
+                    <div id="options-container" class="space-y-3">
+                    </div>
+                </div>
+
+                <div id="quiz-result" class="hidden text-center py-8">
+                    <i class="fas fa-medal text-6xl text-yellow-500 mb-4"></i>
+                    <h4 class="text-3xl font-black text-utama mb-2">Evaluasi Selesai!</h4>
+                    <p class="text-gray-600 mb-6">Nilai Akhir Anda:</p>
+                    <div id="final-score" class="text-6xl font-black text-aksen mb-8">100</div>
+                    
+                    <button onclick="restartQuiz()" class="bg-utama hover:bg-gray-800 text-white font-bold py-3 px-8 rounded-lg transition-all flex items-center gap-2 mx-auto">
+                        <i class="fas fa-rotate-right"></i> Coba Lagi
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200 text-gray-500 text-center py-8">
+        <p class="text-sm font-medium">
+            &copy; 2026 Cabdul Fataax - Program Pengenalan Lapangan Persekolahan.<br>
+            Media Pembelajaran SMK Teknik Bisnis Sepeda Motor.
+        </p>
+    </footer>
+
+    <!-- MODAL LIGHTBOX UNTUK GAMBAR -->
+    <div id="imageModal" class="fixed inset-0 z-[60] hidden bg-black/90 backdrop-blur-sm flex flex-col items-center justify-center p-4 transition-opacity duration-300 opacity-0" onclick="closeModal()">
+        <!-- Tombol Close -->
+        <span class="absolute top-6 right-8 text-white text-4xl cursor-pointer hover:text-aksen transition-colors z-10" onclick="closeModal()">&times;</span>
+        
+        <!-- Gambar Modal -->
+        <img id="modalImg" class="max-w-full max-h-[85vh] object-contain rounded-lg shadow-2xl transform scale-95 transition-transform duration-300" src="" alt="">
+        
+        <!-- Keterangan Gambar -->
+        <div id="modalCaption" class="text-white text-lg font-medium tracking-wide mt-4 text-center"></div>
+    </div>
+
+    <!-- Script Fungsionalitas -->
+    <script>
+        // === SCRIPT MODAL LIGHTBOX ===
+        const modal = document.getElementById('imageModal');
+        const modalImg = document.getElementById('modalImg');
+        const captionText = document.getElementById('modalCaption');
+
+        function openModal(imgElement) {
+            // Tampilkan elemen modal terlebih dahulu
+            modal.classList.remove('hidden');
+            
+            // Beri sedikit jeda agar transisi CSS terbaca
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+                modalImg.classList.remove('scale-95');
+                modalImg.classList.add('scale-100');
+            }, 10);
+            
+            // Set sumber dan deskripsi gambar
+            modalImg.src = imgElement.src;
+            captionText.innerHTML = imgElement.alt;
+        }
+
+        function closeModal() {
+            modal.classList.add('opacity-0');
+            modalImg.classList.remove('scale-100');
+            modalImg.classList.add('scale-95');
+            
+            // Sembunyikan elemen setelah animasi selesai (300ms)
+            setTimeout(() => {
+                modal.classList.add('hidden');
+            }, 300);
+        }
+
+
+        // === SCRIPT KUIS ===
+        const quizData = [
+            {
+                question: "Komponen apa yang berfungsi mengembalikan posisi sepatu rem (kampas) setelah pedal dilepas?",
+                options: ["Brake Cam (Nok)", "Return Spring (Pegas Pengembali)", "Brake Rod (Batang Penarik)", "Brake Lever (Paha Rem)"],
+                correct: 1
+            },
+            {
+                question: "Bagian yang terhubung langsung dengan pedal rem dan berfungsi menarik paha rem ke depan adalah...",
+                options: ["Brake Shoe", "Brake Drum", "Brake Rod (Batang Penarik)", "Return Spring"],
+                correct: 2
+            },
+            {
+                question: "Saat paha rem ditarik, komponen apa yang berputar dan memaksa kampas rem mekar ke luar?",
+                options: ["Brake Cam (Nok)", "Tromol (Brake Drum)", "Pegas", "As Roda (Axle Shaft)"],
+                correct: 0
+            },
+            {
+                question: "Rem tromol pada motor GL-Pro menggunakan sistem mekanis murni. Artinya sistem ini TIDAK menggunakan...",
+                options: ["Gaya gesek", "Tuas penarik", "Sepatu rem", "Fluida hidrolik"],
+                correct: 3
+            },
+            {
+                question: "Apa kerugian utama jika tromol dan kampas rem terlalu panas akibat gesekan pengereman terus-menerus?",
+                options: ["Bahan bakar boros", "Terjadi brake fading (rem blong)", "Lampu rem putus", "Tarikan motor menjadi ringan"],
+                correct: 1
+            },
+            {
+                question: "Komponen yang berfungsi sebagai bidang gesek utama yang diam saat pengereman terjadi adalah...",
+                options: ["Tromol Roda", "Brake Shoe (Kampas Rem)", "Brake Panel", "Brake Cam"],
+                correct: 1
+            },
+            {
+                question: "Tromol rem (brake drum) pada sepeda motor berputar bersamaan dengan...",
+                options: ["Pedal Rem", "Paha Rem", "Roda (Velg)", "Rantai"],
+                correct: 2
+            },
+            {
+                question: "Keausan kampas rem tromol pada sepeda motor dapat dideteksi dari luar tanpa membongkar roda melalui...",
+                options: ["Suara mesin", "Indikator keausan (wear indicator) pada paha rem", "Volume oli mesin", "Kekerasan putaran roda"],
+                correct: 1
+            },
+            {
+                question: "Jika jarak main bebas (free play) pedal rem terasa terlalu dalam, penyetelan dilakukan pada bagian...",
+                options: ["Mur penyetel (Adjusting nut) pada ujung brake rod", "Baut roda belakang", "Paha rem (Brake lever)", "Kabel gas"],
+                correct: 0
+            },
+            {
+                question: "Sistem rem tromol yang menggunakan satu nok (cam) untuk mendorong dua sepatu rem sekaligus disebut tipe...",
+                options: ["Double Leading Shoe", "Single Leading Shoe", "Disc Brake", "Hydraulic Brake"],
+                correct: 1
+            },
+            {
+                question: "Kotoran atau debu sisa gesekan yang menumpuk di dalam ruang tromol sering kali menyebabkan...",
+                options: ["Ban bocor", "Bunyi berdecit saat pengereman", "Bensin boros", "Lampu rem tidak menyala"],
+                correct: 1
+            },
+            {
+                question: "Permukaan dalam tromol yang sudah aus, tidak rata, atau tergores dalam akan mengakibatkan...",
+                options: ["Pengereman lebih pakem", "Pengereman kurang maksimal dan bergetar", "Kampas rem menjadi awet", "Roda berputar lebih cepat"],
+                correct: 1
+            },
+            {
+                question: "Kampas rem tromol sepeda motor modern umumnya terbuat dari bahan...",
+                options: ["Besi cor murni", "Plastik ABS", "Non-asbestos (campuran fiber dan serbuk logam)", "Karet sintetis"],
+                correct: 2
+            },
+            {
+                question: "Jika pegas pengembali (return spring) patah atau kehilangan gaya pegasnya, maka yang akan terjadi adalah...",
+                options: ["Rem macet atau roda seret setelah pedal dilepas", "Rem menjadi lebih pakem", "Jarak pengereman semakin pendek", "Pedal rem patah"],
+                correct: 0
+            },
+            {
+                question: "Bagian penyangga (titik tumpu) kampas rem pada sisi yang berlawanan dengan nok (cam) disebut...",
+                options: ["Brake Rod", "Anchor Pin", "Brake Arm", "Brake Panel"],
+                correct: 1
+            },
+            {
+                question: "Membersihkan debu di dalam rumah tromol paling aman dilakukan menggunakan...",
+                options: ["Bensin bertekanan tinggi", "Air aki", "Kuas dan cairan pembersih khusus (Brake Cleaner)", "Minyak pelumas (Oli)"],
+                correct: 2
+            },
+            {
+                question: "Pada sistem rem tromol motor seperti GL-Pro, plat penutup rumah rem (brake panel) ditahan agar tidak ikut berputar bersama roda oleh komponen...",
+                options: ["Torque link (Lengan penahan)", "Swing arm", "Brake rod", "Shockbreaker"],
+                correct: 0
+            },
+            {
+                question: "Ciri utama kampas rem yang ketebalannya sudah habis (aus) melebihi batas servis adalah...",
+                options: ["Rem semakin pakem", "Warna tromol menjadi hitam", "Indikator keausan melewati batas panah saat direm", "Pedal rem terasa keras saat diinjak"],
+                correct: 2
+            },
+            {
+                question: "Keuntungan utama dari penggunaan rem tromol dibandingkan rem cakram terbuka adalah...",
+                options: ["Lebih cepat melepas panas", "Konstruksi tertutup sehingga lebih aman dari kotoran/lumpur luar", "Lebih ringan", "Perawatan lebih mudah tanpa bongkar roda"],
+                correct: 1
+            },
+            {
+                question: "Gaya yang diubah oleh sistem pengereman tromol untuk menghentikan laju kendaraan adalah...",
+                options: ["Energi gerak (kinetik) menjadi energi panas", "Energi panas menjadi energi gerak", "Energi listrik menjadi energi gerak", "Energi gerak menjadi energi listrik"],
+                correct: 0
+            }
+        ];
+
+        let currentQuestion = 0;
+        let score = 0;
+
+        const questionEl = document.getElementById('question-text');
+        const optionsEl = document.getElementById('options-container');
+        const progressEl = document.getElementById('question-progress');
+        const scoreEl = document.getElementById('score-display');
+        const quizActive = document.getElementById('quiz-active');
+        const quizResult = document.getElementById('quiz-result');
+        const finalScoreEl = document.getElementById('final-score');
+
+        const pointPerQuestion = 5; 
+
+        function loadQuestion() {
+            const q = quizData[currentQuestion];
+            questionEl.innerText = q.question;
+            progressEl.innerText = `Soal ${currentQuestion + 1} / ${quizData.length}`;
+            scoreEl.innerText = `Skor: ${score * pointPerQuestion}`;
+            
+            optionsEl.innerHTML = '';
+            q.options.forEach((opt, index) => {
+                const btn = document.createElement('button');
+                btn.innerText = opt;
+                btn.className = "w-full text-left p-4 rounded-lg border-2 border-gray-200 hover:border-aksen hover:bg-red-50 text-gray-700 font-medium transition-all duration-200";
+                btn.onclick = () => checkAnswer(index, btn);
+                optionsEl.appendChild(btn);
+            });
+        }
+
+        function checkAnswer(selectedIndex, btnElement) {
+            const allButtons = optionsEl.querySelectorAll('button');
+            allButtons.forEach(btn => btn.disabled = true);
+
+            const correctIndex = quizData[currentQuestion].correct;
+
+            if (selectedIndex === correctIndex) {
+                btnElement.classList.replace('border-gray-200', 'border-green-500');
+                btnElement.classList.replace('hover:bg-red-50', 'bg-green-50');
+                btnElement.classList.add('text-green-800', 'font-bold');
+                score++;
+            } else {
+                btnElement.classList.replace('border-gray-200', 'border-red-500');
+                btnElement.classList.add('bg-red-50', 'text-red-800', 'font-bold');
+                allButtons[correctIndex].classList.replace('border-gray-200', 'border-green-500');
+                allButtons[correctIndex].classList.add('bg-green-50', 'text-green-800', 'font-bold');
+            }
+
+            scoreEl.innerText = `Skor: ${score * pointPerQuestion}`;
+
+            setTimeout(() => {
+                currentQuestion++;
+                if (currentQuestion < quizData.length) {
+                    loadQuestion();
+                } else {
+                    showResult();
+                }
+            }, 1800);
+        }
+
+        function showResult() {
+            quizActive.classList.add('hidden');
+            quizResult.classList.remove('hidden');
+            finalScoreEl.innerText = score * pointPerQuestion;
+        }
+
+        function restartQuiz() {
+            currentQuestion = 0;
+            score = 0;
+            quizActive.classList.remove('hidden');
+            quizResult.classList.add('hidden');
+            loadQuestion();
+        }
+
+        window.onload = loadQuestion;
+    </script>
+</body>
+</html>
